@@ -1,0 +1,28 @@
+{
+  "plugins": ["jsdoc-http-plugin"],
+  "recurseDepth": 10,
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "source": {
+    "include": [
+      "src"
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(node_modules)"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs",
+    "readme": "./readme.md",
+    "template": "node_modules/docdash"
+  }
+}
